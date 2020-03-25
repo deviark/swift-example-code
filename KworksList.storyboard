@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G1f-uy-twS">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kwork List-->
+        <scene sceneID="8QB-Uh-H0Y">
+            <objects>
+                <viewController storyboardIdentifier="KWorkListModuleVC" id="G1f-uy-twS" customClass="KWorkListModuleVC" customModule="KworkMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hyc-tf-li8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPK-ki-1D6">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oPK-ki-1D6" secondAttribute="bottom" id="8Ma-k1-AMP"/>
+                            <constraint firstItem="H7X-uw-PbU" firstAttribute="trailing" secondItem="oPK-ki-1D6" secondAttribute="trailing" id="l5R-c3-ASE"/>
+                            <constraint firstItem="oPK-ki-1D6" firstAttribute="leading" secondItem="H7X-uw-PbU" secondAttribute="leading" id="poN-g4-ATy"/>
+                            <constraint firstItem="oPK-ki-1D6" firstAttribute="top" secondItem="Hyc-tf-li8" secondAttribute="top" id="u8K-wH-Fjh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H7X-uw-PbU"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewFrame" destination="oPK-ki-1D6" id="fAT-29-bNS"/>
+                        <segue destination="pey-eT-59d" kind="show" identifier="KWorksListModule to CreateKworkModule" id="FUY-b7-PEA"/>
+                        <segue destination="5Wq-Ye-Kmm" kind="show" identifier="KWorksListModule to KworkDetailModule" id="8Bx-bB-ma9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5b-5H-uyX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="YW5-9B-aPZ" customClass="KWorkListModuleInitializer" customModule="KworkMessenger" customModuleProvider="target">
+                    <connections>
+                        <outlet property="kworkList" destination="G1f-uy-twS" id="9co-zP-Xxn"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-390" y="-275"/>
+        </scene>
+        <!--ViperWebView-->
+        <scene sceneID="LBF-bu-VCX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ViperWebView" id="5Wq-Ye-Kmm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ifM-O9-J4P"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WW0-K9-u3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="-299"/>
+        </scene>
+        <!--ViperWebView-->
+        <scene sceneID="buA-zM-flc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ViperWebView" id="pey-eT-59d" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QYy-Lq-XaT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AT2-dI-9Xy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="-225"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j4M-Gi-gth">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Empty PlaceholdersVC-->
+        <scene sceneID="gzK-mV-Ra6">
+            <objects>
+                <viewController id="j4M-Gi-gth" customClass="EmptyPlaceholdersVC" customModule="KworkMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hYQ-hf-Qjg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dI0-v6-puE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="KworkListItemPlaceholderCell" rowHeight="112" id="uGw-TV-nTR">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="112"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uGw-TV-nTR" id="5TC-MY-1ol">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgKworkCellBackground" translatesAutoresizingMaskIntoConstraints="NO" id="chS-7l-2t0">
+                                                    <rect key="frame" x="4" y="0.0" width="406" height="112"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVm-Xm-6HT">
+                                                    <rect key="frame" x="12" y="4" width="390" height="96"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zJh-Xr-wLr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="169" height="96"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaN-X4-Dij">
+                                                            <rect key="frame" x="177" y="8" width="205" height="61"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-hH-S59">
+                                                            <rect key="frame" x="345" y="71" width="37" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="17" id="bcN-pO-2qc"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                            <color key="textColor" red="0.0" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="KaN-X4-Dij" firstAttribute="leading" secondItem="zJh-Xr-wLr" secondAttribute="trailing" constant="8" id="0Ym-ua-Yne"/>
+                                                        <constraint firstAttribute="bottom" secondItem="WaE-hH-S59" secondAttribute="bottom" constant="8" id="5Fr-Ry-fM9"/>
+                                                        <constraint firstItem="zJh-Xr-wLr" firstAttribute="height" secondItem="bVm-Xm-6HT" secondAttribute="height" id="HEN-vd-J3e"/>
+                                                        <constraint firstItem="zJh-Xr-wLr" firstAttribute="width" secondItem="bVm-Xm-6HT" secondAttribute="width" multiplier="0.433048" id="OCc-3o-RSB"/>
+                                                        <constraint firstItem="zJh-Xr-wLr" firstAttribute="centerY" secondItem="bVm-Xm-6HT" secondAttribute="centerY" id="OuE-Pe-M73"/>
+                                                        <constraint firstItem="WaE-hH-S59" firstAttribute="top" secondItem="KaN-X4-Dij" secondAttribute="bottom" constant="2" id="aNy-p0-fu9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KaN-X4-Dij" secondAttribute="trailing" constant="8" id="ayV-pz-a35"/>
+                                                        <constraint firstItem="WaE-hH-S59" firstAttribute="trailing" secondItem="KaN-X4-Dij" secondAttribute="trailing" id="gME-v8-fYO"/>
+                                                        <constraint firstItem="KaN-X4-Dij" firstAttribute="top" secondItem="bVm-Xm-6HT" secondAttribute="top" constant="8" id="iC7-DZ-JTc"/>
+                                                        <constraint firstItem="zJh-Xr-wLr" firstAttribute="leading" secondItem="bVm-Xm-6HT" secondAttribute="leading" id="qRE-C0-4mV"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="chS-7l-2t0" firstAttribute="top" secondItem="5TC-MY-1ol" secondAttribute="top" id="3Dg-Ek-Uem"/>
+                                                <constraint firstAttribute="trailing" secondItem="chS-7l-2t0" secondAttribute="trailing" constant="4" id="EoN-Ng-Cqq"/>
+                                                <constraint firstAttribute="bottom" secondItem="bVm-Xm-6HT" secondAttribute="bottom" constant="12" id="Etg-am-oat"/>
+                                                <constraint firstItem="bVm-Xm-6HT" firstAttribute="top" secondItem="5TC-MY-1ol" secondAttribute="top" constant="4" id="PgT-AY-AdF"/>
+                                                <constraint firstAttribute="bottom" secondItem="chS-7l-2t0" secondAttribute="bottom" id="YEJ-gK-wst"/>
+                                                <constraint firstAttribute="trailing" secondItem="bVm-Xm-6HT" secondAttribute="trailing" constant="12" id="mBh-Q5-ei0"/>
+                                                <constraint firstItem="chS-7l-2t0" firstAttribute="leading" secondItem="5TC-MY-1ol" secondAttribute="leading" constant="4" id="t5t-XL-kpK"/>
+                                                <constraint firstItem="bVm-Xm-6HT" firstAttribute="leading" secondItem="5TC-MY-1ol" secondAttribute="leading" constant="12" id="xuc-XL-kKm"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dI0-v6-puE" secondAttribute="bottom" id="D0S-li-vdn"/>
+                            <constraint firstItem="dI0-v6-puE" firstAttribute="top" secondItem="hYQ-hf-Qjg" secondAttribute="top" id="Qkp-cw-6wj"/>
+                            <constraint firstItem="dI0-v6-puE" firstAttribute="leading" secondItem="hYQ-hf-Qjg" secondAttribute="leading" id="SXm-ul-Ny2"/>
+                            <constraint firstAttribute="trailing" secondItem="dI0-v6-puE" secondAttribute="trailing" id="xVL-vW-rLY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D2p-Xg-BQI"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dI0-v6-puE" id="aaD-74-hNZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqB-rm-SaG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgKworkCellBackground" width="359" height="112"/>
+    </resources>
+</document>
